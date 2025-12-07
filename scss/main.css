@@ -1,0 +1,47 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #2c3e50;
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 80em;
+}
+
+section {
+  margin: 40px 0;
+}
+
+header {
+  padding: 20px 0;
+}
+
+#specialnosti .cards-container .specialty-card {
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid #8e8e8e;
+}
+
+#facts .facts-list article {
+  padding: 10px;
+  border-right: 1px solid #FF3A3A;
+}
+#facts .facts-list article:last-child {
+  border-right: none;
+}
+
+#reviews .reviews-carousel .review-card {
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid #8e8e8e;
+}
+
+#news .news-carousel .news-card {
+  border-right: 1px solid #FF3A3A;
+}
+#news .news-carousel .news-card:last-child {
+  border-right: none;
+}
+#news .news-carousel .news-card p {
+  padding: 10px;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,7 @@
+#specialnosti {
+  .cards-container {
+    .specialty-card {
+      @include card;
+    }
+  }
+}

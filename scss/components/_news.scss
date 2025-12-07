@@ -1,0 +1,15 @@
+#news {
+  .news-carousel {
+    .news-card {
+      border-right: 1px solid $red;
+
+      &:last-child {
+        border-right: none;
+      }
+
+      p {
+        padding: 10px;
+      }
+    }
+  }
+}
