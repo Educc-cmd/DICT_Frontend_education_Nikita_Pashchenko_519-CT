@@ -167,6 +167,131 @@
         <button>БІЛЬШЕ НОВИН</button>
     </section>
 
+    <section id="edu-program">
+        <h2><snap>1</snap> Курс</h2>
+
+        <table>
+
+            <thead>
+            <tr>
+                <th colspan="2">1 семестр</th>
+                <th colspan="2">2 семестр</th>
+            </tr>
+            <tr>
+                <th>Дисципліна</th>
+                <th>Кредити</th>
+                <th>Дисципліна</th>
+                <th>Кредити</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <td>Мовні компетентності (іноземна мова)</td>
+                <td>3.00</td>
+                <td>Іноземна мова</td>
+                <td>3.00</td>
+            </tr>
+            <tr>
+                <td>Українські студії</td>
+                <td>3.00</td>
+                <td>Формування системного наукового світогляду (на вибір)</td>
+                <td>3.00</td>
+            </tr>
+            <tr>
+                <td>Правова компетентність (на вибір)</td>
+                <td>3.00</td>
+                <td>Основи теорії кіл</td>
+                <td>4.00</td>
+            </tr>
+            <tr>
+                <td>Вища математика</td>
+                <td>5.00</td>
+                <td>Вища математика</td>
+                <td>5.00</td>
+            </tr>
+            <tr>
+                <td>Дискретна математика</td>
+                <td>5.00</td>
+                <td>Фізика</td>
+                <td>5.00</td>
+            </tr>
+            <tr>
+                <td>Основи інфокомунікацій</td>
+                <td>5.00</td>
+                <td>Алгоритми і структури даних</td>
+                <td>4.00</td>
+            </tr>
+            <tr>
+                <td>Програмування на Python</td>
+                <td>4.50</td>
+                <td>Програмування на Python</td>
+                <td>4.50</td>
+            </tr>
+            <tr>
+                <td></td> <td></td>
+                <td>Навчальна практика</td>
+                <td>3.00</td>
+                 </tr>
+            </tbody>
+        </table>
+
+        <h3>Опис ключових предметів</h3>
+        <p>Перший предмет 'Основи інфокомунікацій розповість про цілі навчання освітньої програми, сучасні тенденції в інфокомунікаціях і інформаційних технологіях, можливостіі
+            варіанти вашого розвитку. Як і в усьому ХАІ, студент формує свою власну навчальну траєкторію вже на 1-му курсі за допомогою дисциплін за вибором: "Іноземна мова",
+            Українські студії", "Гуманітарна або економічна дисципліна за вибором і "Правова компетентність за вибором". Вони розвивають у студентів так звані 'м'які" навички
+            (Soft Skills) і полегшують весь процес навчання.</p>
+        <p>Фундаментальні курси "Вища математика", 'Дискретна математика", "Фізика" формують основу для вивчення подальших прикладних курсів. 'Основи теорії кіл* почнуть
+            знайомство з електронікою в цілому. Паралельно з розвитком м'яких навичок і формуванням фундаменту для технічної частини, ми посилено викладаємо студентам
+            програмування. В "Основах програмування' вивчається мова програмування Python, інтегровані середовища розробки, системи контролю версій, різні бібліотеки і
+            інструменти. Python панує як мова програмування в даній освітній програмі і практично у всьому навчальному процесі. "Алгоритми і структури даних" також
+            розширюють знання і розвивають навички в програмуванні як розробника мережевих додатків, так і систем обробки даних. "Навчальна практика" присвячується
+            вивченню операційних систем на базі ядра Linux, що є основою для більшості інформацийних</p>
+    </section>
+
+    <section id="feedback-form">
+        <h2>Вступ 2025</h2>
+        <form>
+
+            <div>
+                <label for="name">Ваше ім'я та прізвище:</label>
+                <input type="text" id="name" name="applicant_name" required>
+            </div>
+            <div>
+                <label for="phone">Контактний телефон:</label>
+                <input type="tel" id="phone" name="contact_phone" placeholder="+380XXXXXXXXX" required>
+            </div>
+            <div>
+                <label for="email">Електронна пошта:</label>
+                <input type="email" id="email" name="contact_email" required>
+            </div>
+            <div>
+                <label for="telegram">Телеграм:</label>
+                <input type="text" id="telegram" name="telegram_nickname" placeholder="@nickname">
+            </div>
+            <div>
+                <label for="math">Бали НМТ - Математика:</label>
+                <input type="number" id="math" name="score_math" min="100" max="200" placeholder="100-200" required>
+            </div>
+            <div>
+                <label for="lang">Бали НМТ - Українська мова:</label>
+                <input type="number" id="lang" name="score_lang" min="100" max="200" placeholder="100-200" required>
+            </div>
+            <div>
+                <label for="history">Бали НМТ - Історія України:</label>
+                <input type="number" id="history" name="score_history" min="100" max="200" placeholder="100-200">
+            </div>
+            <div>
+                <label for="four_subject">Четвертий предмет з НМТ і бали за ним:</label>
+                <input type="number" id="four_subject" name="score_four_subject" min="100" max="200" placeholder="100-200">
+            </div>
+            <div>
+                <label for="expectations">Які напрями вам цікаві:</label>
+                <textarea id="expectations" name="applicant_expectations" rows="5"></textarea>
+            </div>
+            <button type="submit">Надіслати заявку</button>
+        </form>
+    </section>
 </main>
 
 <footer>
