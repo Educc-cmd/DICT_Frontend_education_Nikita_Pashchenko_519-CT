@@ -1,0 +1,11 @@
+body {
+  font-family: $font-stack;
+  color: $main-color;
+  margin: 0 auto;
+  padding: 0 $base-padding;
+  max-width: 80em;
+}
+
+section {
+  margin: 40px 0;
+}

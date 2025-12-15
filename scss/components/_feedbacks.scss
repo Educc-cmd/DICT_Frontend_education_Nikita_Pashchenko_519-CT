@@ -1,0 +1,7 @@
+#reviews {
+  .reviews-carousel {
+    .review-card {
+      @include card;
+    }
+  }
+}
