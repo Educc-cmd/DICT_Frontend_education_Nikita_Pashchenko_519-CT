@@ -24,6 +24,7 @@ header {
   padding: 10px;
   border-right: 1px solid #FF3A3A;
 }
+
 #facts .facts-list article:last-child {
   border-right: none;
 }
@@ -37,11 +38,11 @@ header {
 #news .news-carousel .news-card {
   border-right: 1px solid #FF3A3A;
 }
+
 #news .news-carousel .news-card:last-child {
   border-right: none;
 }
+
 #news .news-carousel .news-card p {
   padding: 10px;
 }
-
-/*# sourceMappingURL=main.css.map */
