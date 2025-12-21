@@ -1,11 +1,35 @@
 body {
-  font-family: $font-stack;
-  color: $main-color;
+
+  background: var(--primary-color);
+  color: var(--primary-text-color);
   margin: 0 auto;
   padding: 0 $base-padding;
-  max-width: 80em;
+  max-width: $widedesk;
 }
 
 section {
   margin: 40px 0;
+}
+
+.button, button {
+  background: var(--red-color);
+  color: var(--primary-text-color);
+  width: fit-content;
+  padding: 7px 14px;
+  border-radius: 5px;
+  margin: 40px 0;
+  border: 1px solid var(--red-color);
+
+  p {
+    margin: 0;
+  }
+
+  &:hover {
+    background: var(--red-hover-color);
+    border-color: var(--red-hover-color);
+  }
+
+  &:focus {
+    background: var(--primary-color);
+  }
 }
