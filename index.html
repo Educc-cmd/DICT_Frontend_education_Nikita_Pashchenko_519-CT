@@ -11,19 +11,25 @@
 <body>
 <header>
     <div class="header-content">
-        <img src="images/logo.svg" alt="Логотип Кафедри ІКТ" title="Кафедра ІКТ ХАІ">
+        <img src="images/logo.svg" alt="Логотип Кафедри ІКТ" title="Кафедра ІКТ ХАІ" class="logo">
 
         <nav>
-            <ul>
-                <li><a href="#specialnosti">СПЕЦІАЛЬНОСТІ</a></li>
-                <li><a href="#science">НАУКА</a></li>
-                <li><a href="#news">НОВИНИ</a></li>
-                <li><a href="#contacts">КОНТАКТИ</a></li>
+            <ul class="main-menu">
+                <li><a href="#specialnosti" class="menu-link">СПЕЦІАЛЬНОСТІ</a></li>
+                <li><a href="#science" class="menu-link">НАУКА</a></li>
+                <li><a href="#news" class="menu-link">НОВИНИ</a></li>
+                <li><a href="#contacts" class="menu-link">КОНТАКТИ</a></li>
             </ul>
         </nav>
 
         <div class="utility-links">
-            <span>🔍</span> <a href="#">UA</a> | <a href="#">EN</a>
+            <span class="search"><img src="images/search.svg" alt="Пошук"></span>
+            <div class="lang">
+                <ul class="lang-wrapper">
+                    <li><a href="#" class="ua is-active">UA</a></li>
+                    <li><a href="#" class="en">EN</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 </header>
@@ -31,10 +37,16 @@
 <main>
 
     <section id="banner">
-        <h1>Створюй майбутнє. Тут і зараз!</h1>
-        <p>Вибери не просто освіту — обери шлях до свого технологічного майбутнього! Кафедра ІКТ ХАІ — це місце, де ідеї стають реальністю, а знання відкривають двері до кар'єри мрії. Почни свій шлях вже сьогодні!</p>
-        <button>ХОЧУ ПОСТУПИТИ</button>
-        <img src="images/boy 2.png" alt="Студент з ноутбуком" title="Програмування - це майбутнє">
+        <div class="content-wrapper">
+            <h1>Створюй майбутнє. Тут і зараз!</h1>
+            <div class="description">
+                <p>Вибери не просто освіту — обери шлях до свого технологічного майбутнього! Кафедра ІКТ ХАІ — це місце, де ідеї стають реальністю, а знання відкривають двері до кар'єри мрії. Почни свій шлях вже сьогодні!</p>
+            </div>
+            <button class="button">ХОЧУ ПОСТУПИТИ</button>
+        </div>
+        <div class="image-wrapper">
+            <img src="images/man.png" alt="Студент з ноутбуком" title="Програмування - це майбутнє">
+        </div>
     </section>
 
     <section id="specialnosti">
