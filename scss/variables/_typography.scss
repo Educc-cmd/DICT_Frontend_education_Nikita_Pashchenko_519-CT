@@ -1,58 +1,133 @@
 body {
-  font-size: 14px;
   font-family: $comfortaa;
   color: var(--primary-text-color);
+
+  font-size: 14px;
+  line-height: 1.4;
+
+@media (min-width: 796px) {
+  font-size: 16px;
 }
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+
+  @media (min-width: 1200px) {
+    font-size: 16px;
+  }
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
   line-height: 1.4;
   font-weight: 700;
   font-family: $geologica;
+  margin-bottom: 0.5em;
 }
+
 h1, .h1 {
-  font-size: 38px;
-}
-h2, .h2 {
-  font-size: 32px;
-}
-h3, .h3 {
   font-size: 28px;
+
+  @media (min-width: 796px) {
+    font-size: 32px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 36px;
+  }
 }
-h4, .h4 {
+
+h2, .h2 {
+  font-size: 26px;
+
+  @media (min-width: 796px) {
+    font-size: 28px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 32px;
+  }
+}
+
+h3, .h3 {
   font-size: 24px;
+
+  @media (min-width: 796px) {
+    font-size: 26px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 30px;
+  }
 }
+
+h4, .h4 {
+  font-size: 22px;
+
+  @media (min-width: 796px) {
+    font-size: 24px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 28px;
+  }
+}
+
 h5, .h5 {
-  font-size: 18px;
+  font-size: 20px;
+
+  @media (min-width: 796px) {
+    font-size: 22px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 24px;
+  }
 }
+
 h6, .h6 {
-  font-size: 16px;
+  font-size: 18px;
+
+  @media (min-width: 796px) {
+    font-size: 20px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 22px;
+  }
 }
+
 .p, p {
-  font-size: 14px;
-  line-height: 1.2;
+  line-height: 1.4;
   margin: 12px 0;
 }
+
 .small, small {
-  font-size: 12px;
+  font-size: 0.85em;
   line-height: 1.2;
 }
+
 .scc_large-text,
 .large {
-  font-size: 16px;
+  font-size: 1.15em;
   line-height: 1.4;
 }
+
 a {
   color: var(--red-color);
   font-weight: 400;
   text-decoration: underline;
+  transition: all 0.3s ease;
+
   &:active,
   &:hover,
   &:focus {
     text-decoration: none;
+    color: var(--red-hover-color);
   }
 }
+
 strong {
   font-weight: 700;
 }
+
 em {
   font-style: italic;
 }
