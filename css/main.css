@@ -195,6 +195,7 @@ section {
 
 header {
   padding: 20px 0;
+  position: relative;
 }
 header .header-content {
   display: flex;
@@ -210,13 +211,15 @@ header .header-content .logo {
 header .header-content nav {
   width: calc(100% - 292px);
   order: 2;
-  width: auto;
   margin-left: auto;
   align-items: center;
+  position: static;
 }
 header .header-content nav .burger-menu {
   display: flex;
   justify-content: flex-end;
+  margin-left: auto;
+  width: fit-content;
   margin-right: 20px;
 }
 header .header-content nav .burger-menu .menu-toggle {
@@ -224,24 +227,25 @@ header .header-content nav .burger-menu .menu-toggle {
   margin: 0;
   padding: 8px 15px;
   user-select: none;
+  background-color: var(--red-color);
+  color: #fff;
+  border-radius: 5px;
+  border: none;
 }
 header .header-content nav .main-menu {
   margin: 0;
-  padding: 0;
+  padding: 20px;
   list-style: none;
   display: none;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 20px;
-  justify-content: center;
-  font-weight: bold;
   background-color: var(--primary-color);
   text-align: center;
   position: absolute;
   top: 100%;
   left: 0;
   width: 100%;
-  border: 1px solid var(--red-color);
+  border-bottom: 1px solid var(--red-color);
   z-index: 100;
 }
 header .header-content nav .main-menu .menu-link {
@@ -249,6 +253,7 @@ header .header-content nav .main-menu .menu-link {
   color: var(--primary-text-color);
   text-transform: uppercase;
   font-weight: bold;
+  display: block;
 }
 header .header-content nav .main-menu.show {
   display: flex;
@@ -259,9 +264,6 @@ header .header-content nav .main-menu.show {
   margin: 0;
   padding: 20px;
 }
-header .header-content nav input:checked ~ .main-menu {
-  display: flex;
-}
 @media (min-width: 1200px) {
   header .header-content nav {
     order: 2;
@@ -269,7 +271,7 @@ header .header-content nav input:checked ~ .main-menu {
     width: auto;
     flex-grow: 1;
   }
-  header .header-content nav .burger-menu, header .header-content nav input {
+  header .header-content nav .burger-menu {
     display: none;
   }
   header .header-content nav .main-menu {
@@ -296,7 +298,6 @@ header .header-content .utility-links .search {
   margin-left: auto;
 }
 header .header-content .utility-links .lang {
-  width: auto;
   width: 104px;
 }
 header .header-content .utility-links .lang .lang-wrapper {
